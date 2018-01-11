@@ -11,12 +11,33 @@
 <!-- There are two types of form tags: -->
 <!-- Action - where the form send data to -->
 <!-- Method - what HTTP method (get or post) -->
+<!-- Adding labels will make site more accessible -->
 
-<form>
-  <input name="username" type="text" placeholder="username">
-  <input name="password" type="password" placeholder="password">
+<!-- One way of creating form -->
+<!-- <form action="http://www.wikipedia.org">
+  <label>Username:<input name="username" type="text" placeholder="username">
+  </label>
+
+  <label>Password:<input name="password" type="password" placeholder="password">
+  </label>
+
+  <input type="submit">
+</form> -->
+
+<!-- Alternate way, using for attribute on label, so they are not nested
+like previous form. The data is not connected, have a label for each input -->
+
+<form action="http://www.wikipedia.org">
+  <label for="username">Username:</label>
+    <input id="username" type="email" placeholder="email" required="true">
+  <label for="password">Password:</label>
+    <input id="password" type="password" placeholder="password" required="true">
+  </label>
+
   <input type="submit">
 </form>
+
+
 
   </body>
 </html>
