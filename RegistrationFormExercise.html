@@ -30,7 +30,8 @@
     <label for="email">Email:</label>
     <input id="email" type="email" placeholder="email" required>
     <label for="password">Password:</label>
-    <input id="password" type="password" placeholder="your password" required max="10" minlength="5"></label>
+    <!-- password pattern validation -->
+    <input id="password" type="password" placeholder="your password" pattern=".{5,10}" required title="Your password must be between 5 to characters"></label>
   </div>
 
   <div>
