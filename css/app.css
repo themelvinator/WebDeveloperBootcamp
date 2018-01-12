@@ -1,5 +1,17 @@
 h1 {
-  color: red;
+  color: rgba(0,200,100,1);
+  /* border-color: purple;
+  border-width: 5px;
+  border-style: solid; */
+
+  border: 2px solid rgb(255,100,80);
+}
+
+body {
+  /* background: url(https://i.pinimg.com/736x/27/51/08/275108132399f75f6417bff5d18b13c1--wood-grain-texture-wood-grain-pattern.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background: pink;
 }
 
 li {
@@ -8,4 +20,5 @@ li {
 
 h4 {
   color: purple;
+  background: rgb(255,100,80);
 }
