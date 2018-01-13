@@ -2,23 +2,56 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Specificity</title>
+    <title>Specificity Example</title>
     <style type="text/css">
 
+    ul {
+      color: blue;
+    }
+
+    body {
+      color: red;
+    }
+
+    li {
+      color: orange;
+    }
+
+/* In example, body color is red, but li color is orange.
+Because the text in li is specificly targeted to
+be orange, it is orange. If li is taken out, text
+reverts back to parent color of body tag, which is red */
+
+    .highlight {
+      color: yellow;
+  }
+
+/* .highlight wins here */
+
+    #special {
+      color: pink;
+    }
+
+/* How is Specificity determined? Each element is
+assigned a numeric value  */
 
 
-
-
+/* Specificity: ID selectors > Class, Attribute and
+Pseudo-class selectors > Type selectors */
 
     </style>
   </head>
   <body>
 
+<p>HELLO!</p>
+
+
+
 <ul>
-  <li>John</li>
+  <li id="special" class="highlight">John</li>
   <li>Paul</li>
   <li>George</li>
-  <li>Ringo</li>
+  <li class="highlight">Ringo</li>
 </ul>
 
   </body>
