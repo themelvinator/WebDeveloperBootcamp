@@ -1,0 +1,29 @@
+/* Stylesheet related to boxmodel.html */
+
+
+p {
+
+/* Content - width and height */
+
+  width: 50%;
+
+/* Borders */
+
+
+  border: 2px solid blue;
+
+/* Padding */
+
+/*  padding: 10px; */
+
+  padding-left: 40px;
+
+
+/* Margins */
+
+  margin: 100px;
+
+  /* margin auto - automatically center content */
+
+
+}
